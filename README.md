@@ -1,7 +1,14 @@
 # TranslatorApp
 Python English Spanish translator built in Custom Tkinter
 
-[Custom Tkinter Official Documentation and Tutorials](https://customtkinter.tomschimansky.com)
+- [Custom Tkinter Official Documentation and Tutorials](https://customtkinter.tomschimansky.com)
+- [Deep Translator](https://pypi.org/project/deep-translator)
+
+## Requirements
+Python 3.11
+ 
+- pip install customtkinter
+- pip install deep-translator
 
 ## Changes
 

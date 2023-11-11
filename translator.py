@@ -1,4 +1,15 @@
+"""
+    Name: translator.py
+    Author: William A Loring
+    Created: 11/11/2023
+    Purpose: Translate English to Spanish using deep-translator library
+"""
+
+# https://customtkinter.tomschimansky.com
+# pip install customtkinter
 import customtkinter as ct
+# https://pypi.org/project/deep-translatorcustom
+# pip install deep-translator
 from deep_translator import GoogleTranslator
 
 
