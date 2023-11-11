@@ -1,2 +1,2 @@
 # TranslatorApp
-Python English Spanish translator build in Custom Tkinter
+Python English Spanish translator built in Custom Tkinter
