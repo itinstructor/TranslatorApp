@@ -20,14 +20,16 @@ class TranslationApp(ct.CTk):
         self.title("Translation App")
         # Add icon to program title bar
         self.iconbitmap('translate.ico')
-        # Set up the appearance and default color theme of the application window
+
+        # Set up the appearance and default color theme of the
+        # CustomTkinter application window
         # Modes: system (default), light, dark
         ct.set_appearance_mode("dark")
         # Themes: blue (default), dark-blue, green
         ct.set_default_color_theme("blue")
 
         # Call the create_widgets method to create and
-        # configure widgets of the application
+        # configure widgets for the application
         self.create_widgets()
 
     def create_widgets(self):
@@ -119,6 +121,10 @@ class TranslationApp(ct.CTk):
         else:
             self.lbl_result.configure(text="Please enter text!")
 
+        # Select all text in the entrybox to allow user
+        # to type and replace the entered text quickly
+        self.entry_input.select_range(0, ct.END)
+
     def translate_to_english(self):
         """
         Translates input text from Spanish to English using the GoogleTranslator library.
@@ -147,6 +153,10 @@ class TranslationApp(ct.CTk):
                 text=f"English: {translated_text}")
         else:
             self.lbl_result.configure(text="Please enter text!")
+
+        # Select all text in the entrybox to allow user
+        # to type and replace the entered text quickly
+        self.entry_input.select_range(0, ct.END)
 
 
 if __name__ == "__main__":
