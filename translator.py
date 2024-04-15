@@ -84,8 +84,8 @@ class TranslationApp(ct.CTk):
 
         # Bind the enter key to the method
         # When the Enter key is pressed, the method will be fired
-        self.entry_input.bind('<Return>', self.translate_to_spanish)
-        self.entry_input.bind('<KP_Enter>', self.translate_to_spanish)
+        # self.entry_input.bind('<Return>', self.translate_to_spanish)
+        # self.entry_input.bind('<KP_Enter>', self.translate_to_spanish)
 
         # Set the focus on the entry widget for easy data entry
         # Delay setting the focus for 10 ms after program is loaded
@@ -94,7 +94,7 @@ class TranslationApp(ct.CTk):
             self.entry_input.focus_set
         )
 
-    def translate_to_spanish(self, args):
+    def translate_to_spanish(self):
         """
         Translates the input text from English to Spanish using the GoogleTranslator library.
 
